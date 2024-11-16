@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaaz's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: white;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            width: 100%;
+        }
+        main {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 3fr 2fr; 
+            gap: 2rem;
+            width: 100%;
+        }
+        section {
+            padding: 1rem;
+            background-color: #222;
+            border-radius: 10px;
+        }
+        h1, h2, h3, h4 {
+            font-size: 30px;
+            color: #fff;
+        }
+        img {
+            display: block;
+            margin: 1rem 0;
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 0.5rem 0;
+        }
+        .resume-link {
+            margin-top: 1rem;
+        }
+        .contact-details ul {
+            padding: 0;
+        }
+        .name-highlight {
+            display: inline;
+            color: darkgreen;
+            text-shadow: 0 0 10px darkgreen, 0 0 20px darkgreen, 0 0 30px darkgreen;
+        }
+        .d-grid {
+            display: flex;
+            justify-content: center;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Welcome to Portfolio</h2>
+</header>
+
+<main>
+    <section>
+        <h3>Hello,</h3>
+        <h1>I am <span class="name-highlight">Shaaz</span></h1>
+        <img src="pic.jpg" alt="Shaaz's Photo" width="250" height="200">
+        <p>Hello! I’m Shaaz, a passionate Frontend Developer with a keen eye for design and a love for creating seamless user experiences. I specialize in building visually appealing, responsive, and efficient web applications. With a solid foundation in HTML, CSS, and JavaScript, I’ve mastered modern frameworks like React to bring complex designs to life.</p>
+        <p>I’m driven by a desire to make digital interactions effortless and enjoyable for users. My goal is to blend functionality with design, creating clean, interactive, and accessible interfaces that align with best practices. From responsive layouts to performance optimization, I strive for excellence in every line of code.</p>
+    </section>
+    <section>
+        <h3>Skills</h3>
+        <ul>
+            <li>MERN Stack</li>
+            <li>MEAN Stack</li>
+            <li>Machine Learning</li>
+            <li>Big Data Analytics</li>
+            <li>Android Development</li>
+        </ul>
+
+        <h3>Resume</h3>
+        <div class="d-grid">
+            <a href="https://drive.google.com/file/d/1XU_FOh6y9GWBIhE-ptY0yScHpRC4enFt/view?usp=drive_link" target="_blank">
+                <button type="button" class="btn-primary">Download Resume</button>
+            </a>
+        </div>
+    </section>
+</main>
+
+<!-- New Projects and Contact Details Section -->
+<main>
+    <section>
+        <h3>Projects</h3>
+        <h4>Air Quality Prediction – Machine Learning Project</h4>
+        <ul>
+            <li>Participated in a national-level hackathon to build an air quality prediction system using Python-based machine learning models.</li>
+            <li>Achieved an 85% accuracy using decision trees and regression models to predict air quality indices in various cities.</li>
+        </ul>
+
+        <h4>Mondrian Project</h4>
+        <ul>
+            <li>Developed a web-based application emulating Piet Mondrian's artistic style using HTML and CSS, providing an interactive user experience.</li>
+        </ul>
+
+        <h4>Tindog Project</h4>
+        <ul>
+            <li>Created a dating website for dogs using HTML, CSS, and JavaScript.</li>
+        </ul>
+    </section>
+
+    <section class="contact-details">
+        <h4>Contact Details</h4>
+        <ul>
+            <li>Email: shaazahmed@gmail.com</li>
+            <li>Phone: 46547894751</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 This portfolio belongs to Shaaz.</p>
+</footer>
+
+</body>  
+</html>
